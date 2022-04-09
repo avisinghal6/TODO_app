@@ -1,0 +1,6 @@
+    <link rel="stylesheet" href="/css/tasks.css">
+    <li>
+      <input type="checkbox" id="<%=task._id %>" data-id="<%=task._id %>" class="custom-checkbox">
+      <label for="<%=task.id %>" <%= task.description %> </label>
+      <img src="bin.svg" class="delete" data-id="<%=task._id %>" />
+    </li>

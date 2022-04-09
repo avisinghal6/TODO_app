@@ -1,10 +1,17 @@
 
 <link rel="stylesheet" href="/css/createtasks.css">
-<form id="create-tasks" action="" method="">
+
+
+<form id="create-tasks" action="/add-task" method="POST">
     <hr class="hr-line">
+
+
     <label class="label" for="description"> Description </label> <br>
     <textarea class="input-description"  name="description" rows="2" cols="40" placeholder="What do you want to do ?" required></textarea>
     <hr class="hr-line">
+
+
+
     <div id="category-date">
         <div id="category">
             <label class="label" for="category">Category </label> <br>
@@ -16,14 +23,25 @@
                 <option class="options" value="other">Other</option>
               </select>
         </div>
+
+
         <div class="vl"></div>
+
+
         <div id="duedate">
             <label class="label" for="duedate">Due Date </label> <br>
-            <input type="datetime-local" id="date-select" name="duedate">
+            <input type="date" id="date-select" name="duedate">
         </div>
+
+
     </div>
+
     <br>
+
+
     <hr class="hr-line">
+
+
     <div id="submit">
         <div id="add-task">
             <input id="button-add-task" type="submit" value="Add Task" required>
@@ -32,8 +50,12 @@
         <div id="delete-task">
             <input id="button-delete-task" type="submit" value="Delete Tasks" required>
         </div>
-        
-       
+         
     </div>
+
+    <ul id="list">
+        
+    </ul>
+    
 
 </form>
