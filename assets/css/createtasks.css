@@ -1,0 +1,105 @@
+
+.label{
+    color:grey;
+    font-size: 1.5rem;
+    margin-left: 5%;
+}
+
+
+.input-description{
+    outline: none;
+    border: none;
+    margin-left: 5%;
+    resize: none;
+    font-family: 'Times New Roman';
+    color: black;
+    font-size: 1rem;
+}
+
+#category-select{
+    margin-left: 5%;
+    width: 80%;
+    font-family: 'Times New Roman';
+    color: grey;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+#date-select{
+    margin-left: 5%;
+    width: 80%;
+    font-family: 'Times New Roman';
+    color: grey;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+
+.hr-line{
+    
+    width:100%;
+
+}
+
+#category-date{
+    display: flex;
+}
+
+#category{
+    width:50%;
+}
+#duedate{
+    width:50%;
+}
+.vl {
+    border-left: 1px solid lightgrey;
+      
+}
+
+#submit{
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#add-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:15vw;
+    height:10vh;
+    background-color: black;
+    color: white;
+    
+}
+
+#delete-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:15vw;
+    height:10vh;
+    background-color: red;
+    color: white;
+    
+}
+
+#button-add-task{
+    border: 0px solid transparent;
+    box-shadow: 0px 0px 0px transparent;
+    text-shadow: 0px 0px 0px transparent;
+    background: black;
+    color: white;
+    font-size: 2rem;
+}
+
+#button-delete-task{
+    border: 0px solid transparent;
+    box-shadow: 0px 0px 0px transparent;
+    text-shadow: 0px 0px 0px transparent;
+    background: red;
+    color: white;
+    font-size: 2rem;
+}

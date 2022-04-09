@@ -7,14 +7,20 @@
     </head>
 
     <body>
+        <div id="app-content">
             <header id="app-title">
                 <h1>TODO APP</h1>
             </header>
             
+            
+            
+            <div id="todo-content">
+                <%- body %>
+            </div>
+            
+        </div>
+            
         
-        <%- body %>
-        
-        <%- include('home'); %>
 
         <%- script %>
     </body>

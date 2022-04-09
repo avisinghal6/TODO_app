@@ -1,0 +1,39 @@
+
+<link rel="stylesheet" href="/css/createtasks.css">
+<form id="create-tasks" action="" method="">
+    <hr class="hr-line">
+    <label class="label" for="description"> Description </label> <br>
+    <textarea class="input-description"  name="description" rows="2" cols="40" placeholder="What do you want to do ?" required></textarea>
+    <hr class="hr-line">
+    <div id="category-date">
+        <div id="category">
+            <label class="label" for="category">Category </label> <br>
+            <select id="category-select" name="category">
+                <option class="options" value="">Choose a Category</option>
+                <option class="options" value="personal">Personal</option>
+                <option class="options" value="work">Work</option>
+                <option class="options" value="school">School</option>
+                <option class="options" value="other">Other</option>
+              </select>
+        </div>
+        <div class="vl"></div>
+        <div id="duedate">
+            <label class="label" for="duedate">Due Date </label> <br>
+            <input type="datetime-local" id="date-select" name="duedate">
+        </div>
+    </div>
+    <br>
+    <hr class="hr-line">
+    <div id="submit">
+        <div id="add-task">
+            <input id="button-add-task" type="submit" value="Add Task" required>
+        </div>
+
+        <div id="delete-task">
+            <input id="button-delete-task" type="submit" value="Delete Tasks" required>
+        </div>
+        
+       
+    </div>
+
+</form>

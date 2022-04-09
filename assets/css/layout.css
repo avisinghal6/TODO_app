@@ -1,5 +1,16 @@
+#app-content{
+    height: 70vh;
+    width: 60vw;
+    background-color: white;
+    margin-left: 20%;
+}
 #app-title{
-    margin-left: 50rem;
-    margin-top: 2rem;
+    margin-left: 35%;
+    margin-top: 2vh;
     color: grey;
+    font-size: 2rem;
+}
+
+body{
+    background-color: grey;
 }
