@@ -64,7 +64,7 @@
     justify-content: space-evenly;
 }
 
-#add-task{
+#add-tasks{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,4 +102,17 @@
     background: red;
     color: white;
     font-size: 2rem;
+}
+
+#delete-button-icon{
+    height: 3vh;
+    width: 3vh;
+   
+}
+
+#add-button-icon{
+    height: 3vh;
+    width: 3vh;
+    background-color: white;
+   
 }

@@ -15,7 +15,7 @@
     <div id="category-date">
         <div id="category">
             <label class="label" for="category">Category </label> <br>
-            <select id="category-select" name="category">
+            <select id="category-select" name="category" required>
                 <option class="options" value="">Choose a Category</option>
                 <option class="options" value="personal">Personal</option>
                 <option class="options" value="work">Work</option>
@@ -28,9 +28,9 @@
         <div class="vl"></div>
 
 
-        <div id="duedate">
+        <div id="duedate" >
             <label class="label" for="duedate">Due Date </label> <br>
-            <input type="date" id="date-select" name="duedate">
+            <input type="date" id="date-select" name="duedate" required>
         </div>
 
 
@@ -43,19 +43,25 @@
 
 
     <div id="submit">
-        <div id="add-task">
+        <div id="add-tasks">
+            <img id= "add-button-icon" src="/images/plus-solid.svg" />
             <input id="button-add-task" type="submit" value="Add Task" required>
         </div>
 
-        <div id="delete-task">
-            <input id="button-delete-task" type="submit" value="Delete Tasks" required>
-        </div>
+        
          
     </div>
 
-    <ul id="list">
+    <div id="container">
+        <ul id="list">
+            <% for(task of tasks) { %>
+                <%- include('_tasks') %>
         
-    </ul>
+            <% } %>
+        </ul>
+
+    </div>
+    
     
 
 </form>

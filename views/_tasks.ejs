@@ -1,0 +1,34 @@
+    <link rel="stylesheet" href="/css/tasks.css">
+    <li>
+      
+      <div id="task-content">
+        <input type="checkbox" id="<%=task._id %>" data-id="<%=task._id %>" class="custom-checkbox">
+        <label for="<%=task.id %>" > <%= task.description %> </label>
+        <span>
+          <img id= "add-button-icon" src="/images/calendar-days-solid.svg" />
+          <% var date= new Date(task.duedate); %>
+          <%= date.toDateString() %>
+        </span>
+      </div>
+      <% if(task.category == 'personal') { %>
+        <div class="category-display" id="red">
+          <%= task.category %>
+        </div>
+      <% } else if(task.category == 'work') { %>
+        <div class="category-display" id="yellow">
+          <%= task.category %>
+        </div>
+      <% } else if(task.category == 'school') { %>
+          <div class="category-display" id="purple">
+            <%= task.category %>
+          </div>
+      <% } else if(task.category == 'other') { %>
+            <div class ="category-display" id="green">
+              <%= task.category %>
+            </div>
+          <%} %>
+
+
+      <a href="/delete-task/<%=task._id %>" ><img src="/images/trash-can-solid.svg" class="delete"  /></a>
+      
+    </li>

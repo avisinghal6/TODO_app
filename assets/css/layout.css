@@ -3,7 +3,13 @@
     width: 60vw;
     background-color: white;
     margin-left: 20%;
+    overflow: auto;
 }
+
+#app-content::-webkit-scrollbar { 
+    width: 0 !important 
+}
+
 #app-title{
     margin-left: 35%;
     margin-top: 2vh;
